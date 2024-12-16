@@ -1,10 +1,3 @@
-Voici un **README** complet pour ton projet en fonction de la structure que tu as fournie :
-
-docker exec -it forum_app-db-1 psql -U <your_db_username> -d <your_db_name>
-
-docker exec -it forum_app-db-1 psql -U heiva -d forum_app_db
----
-
 # Forum App
 
 ## Table des matières
