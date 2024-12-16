@@ -1,0 +1,284 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0 15px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* App Wrapper */
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    background-color: #282c34;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left-side nav (Logo + Home) */
+.left-nav {
+    display: flex;
+    align-items: center;
+}
+
+.left-nav .logo {
+    color: #61dafb;
+    font-size: 24px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.left-nav a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.left-nav a:hover {
+    color: #61dafb;
+}
+
+/* Right-side nav (Mon Dashboard, Login, Signup) */
+.right-nav {
+    display: flex;
+    align-items: center;
+}
+
+.right-nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.right-nav a:hover {
+    color: #61dafb;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+    background-color: #282c34;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.footer .footer-links a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer .footer-links a:hover {
+    color: #61dafb;
+}
+
+/* Home Page */
+.home-page {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.create-topic,
+.topics-list {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 48%;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.create-topic h2,
+.topics-list h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+ul li a:hover {
+    color: #0056b3;
+}
+
+/* Forum Topic Page */
+.forum-topic {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.topic-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.topic-header h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.topic-header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.posts-list {
+    margin-top: 30px;
+}
+
+.post-item {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-item p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.post-item small {
+    font-size: 0.9rem;
+    color: #555;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Post Form */
+.new-post-form {
+    margin-top: 40px;
+}
+
+.new-post-form textarea {
+    width: 100%;
+    height: 120px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.new-post-form button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.new-post-form button:hover {
+    background-color: #218838;
+}
+
+/* Loading Screen */
+.loading {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 50px;
+    color: #999;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .create-topic,
+    .topics-list {
+        width: 100%;
+    }
+
+    .left-nav,
+    .right-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .right-nav a,
+    .left-nav a {
+        margin: 5px 0;
+    }
+}

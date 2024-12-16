@@ -1,0 +1,135 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f6fa;
+}
+
+/* Forum Topic Container */
+.forum-topic {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.topic-header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.topic-header h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.topic-header p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Post List Styling */
+.posts-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.post-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.post-item p {
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #444;
+}
+
+.post-item small {
+    color: #888;
+    font-size: 14px;
+}
+
+.reply-button {
+    margin-left: 15px;
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.reply-button:hover {
+    text-decoration: underline;
+}
+
+/* Form Styling */
+.new-post-form, .new-reply-form {
+    margin-top: 30px;
+}
+
+.new-post-form textarea, .new-reply-form textarea {
+    width: 100%;
+    height: 120px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    resize: vertical;
+}
+
+.new-post-form button, .new-reply-form button {
+    width: 100%;
+    background-color: #ff5e00;
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.new-post-form button:hover, .new-reply-form button:hover {
+    background-color: #ff5e00;
+}
+
+/* Reply Header with Close Button */
+.reply-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff5e00;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    height: 50px; /* Adjusting height to fix issues */
+}
+
+.reply-header h4 {
+    margin: 0;
+    font-size: 18px;
+    color: white;
+}
+
+.close-reply {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    padding: 0;
+    margin-right: 10px;
+    margin-top: 2px; /* Adjusting vertical position */
+}
+
+.close-reply:hover {
+    color: red;
+}
